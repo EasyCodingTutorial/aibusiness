@@ -1,0 +1,44 @@
+.Content {
+    margin-block: 20px;
+    text-align: center;
+}
+
+.Content h6 {
+    font-weight: 800;
+    font-size: 28px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Content h5 {
+    font-size: 40px;
+    font-weight: 900;
+    background: -webkit-linear-gradient(#eee, var(--main));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1000px) {
+    .Content h5 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Content h5 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .Content h5 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Content h5 {
+        font-size: 15px;
+    }
+}

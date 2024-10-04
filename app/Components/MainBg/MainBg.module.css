@@ -1,0 +1,87 @@
+.MainBg {
+    margin-block: 30px;
+    width: 1000px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.MainBg h6 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 50px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.MainBg h5 {
+    font-weight: 800;
+    font-size: 50px;
+    margin-block: 20px;
+    background: -webkit-linear-gradient(#eee, var(--main));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.MainBg p {
+    font-size: 11px;
+    color: #ccc;
+}
+
+
+@media (max-width: 1008px) {
+    .MainBg {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .MainBg h6 {
+        font-size: 1.2rem;
+    }
+
+    .MainBg h5 {
+        font-size: 3rem;
+    }
+
+    .MainBg p {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 865px) {
+    .MainBg {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .MainBg h6 {
+        font-size: 0.8rem;
+    }
+
+    .MainBg h5 {
+        font-size: 2rem;
+    }
+
+    .MainBg p {
+        font-size: 0.4rem;
+    }
+}
+
+@media (max-width: 468px) {
+    .MainBg {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .MainBg h6 {
+        font-size: 0.8rem;
+    }
+
+    .MainBg h5 {
+        font-size: 1.5rem;
+    }
+
+    .MainBg p {
+        font-size: 0.4rem;
+    }
+}
