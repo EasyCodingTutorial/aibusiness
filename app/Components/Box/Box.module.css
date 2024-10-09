@@ -2,11 +2,12 @@
     flex-basis: calc(25% - 20px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     box-shadow: var(--boxShadow);
-    padding: 20px;
-    text-align: center;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
 }
 
 .Box:hover {
@@ -14,13 +15,18 @@
     cursor: pointer;
 }
 
-.Box h6 {
-    font-weight: 800;
-    font-size: 100px;
+.Box img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .Boxcontent {
+    position: absolute;
+    bottom: 0;
     padding: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(143, 134, 134, 0.3), rgba(145, 138, 138, 0.4));
 }
 
 .Boxcontent h5 {

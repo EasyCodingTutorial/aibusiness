@@ -1,87 +1,146 @@
 .MainBg {
-    margin-block: 30px;
-    width: 1000px;
-    margin: 10px auto;
-    text-align: center;
+    position: relative;
 }
 
-.MainBg h6 {
+.MainBg img {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.MainBg .Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-160deg, rgba(0, 0, 0, 0.3), rgba(247, 247, 247, 0.5));
+}
+
+.MainBg .Content {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    padding: 20px;
+}
+
+.MainBg .Content h6 {
     font-weight: 800;
+    font-size: 25px;
+    background: var(--main);
+    border-radius: 999px;
+    padding: 8px 22px;
+    width: max-content;
+}
+
+.MainBg .Content h5 {
+    font-weight: 900;
+    text-shadow: 0 0 6px #372f10;
+    font-size: 100px;
+
+}
+
+
+.SliderControls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 3;
+}
+
+.PrevButton,
+.NextButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
     font-size: 20px;
-    margin-top: 50px;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.MainBg h5 {
-    font-weight: 800;
-    font-size: 50px;
-    margin-block: 20px;
-    background: -webkit-linear-gradient(#eee, var(--main));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.PrevButton:hover,
+.NextButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.MainBg p {
-    font-size: 11px;
-    color: #ccc;
+.PrevButton {
+    border-radius: 5px 0 0 5px;
+    /* Rounded left corner */
 }
 
+.NextButton {
+    border-radius: 0 5px 5px 0;
+    /* Rounded right corner */
+}
 
-@media (max-width: 1008px) {
-    .MainBg {
+@media(max-width:1400px) {
+    .MainBg .Content h5 {
+        font-size: 80px;
+    }
+
+    .MainBg .Content h6 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:1200px) {
+    .MainBg .Content h5 {
+        font-size: 60px;
+    }
+
+    .MainBg .Content h6 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:950px) {
+
+    .MainBg .Content {
+        position: absolute;
+        bottom: 100px;
+        left: 0px;
+        padding: 20px;
+    }
+
+    .MainBg .Content h5 {
+        font-size: 40px;
+    }
+
+    .MainBg .Content h6 {
+        font-size: 16px;
+    }
+
+    .MainBg img {
+        height: 70vh;
         width: 100%;
-        font-size: 1.2rem;
-    }
-
-    .MainBg h6 {
-        font-size: 1.2rem;
-    }
-
-    .MainBg h5 {
-        font-size: 3rem;
-    }
-
-    .MainBg p {
-        font-size: 0.5rem;
+        object-fit: cover;
     }
 }
 
-@media (max-width: 865px) {
-    .MainBg {
+@media(max-width:650px) {
+
+    .MainBg .Content {
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .MainBg .Content h5 {
+        font-size: 25px;
+    }
+
+    .MainBg .Content h6 {
+        font-size: 14px;
+        padding: 6px 18px;
+    }
+
+    .MainBg img {
+        height: 60vh;
         width: 100%;
-        font-size: 0.8rem;
-    }
-
-    .MainBg h6 {
-        font-size: 0.8rem;
-    }
-
-    .MainBg h5 {
-        font-size: 2rem;
-    }
-
-    .MainBg p {
-        font-size: 0.4rem;
-    }
-}
-
-@media (max-width: 468px) {
-    .MainBg {
-        width: 100%;
-        font-size: 0.8rem;
-    }
-
-    .MainBg h6 {
-        font-size: 0.8rem;
-    }
-
-    .MainBg h5 {
-        font-size: 1.5rem;
-    }
-
-    .MainBg p {
-        font-size: 0.4rem;
+        object-fit: cover;
     }
 }

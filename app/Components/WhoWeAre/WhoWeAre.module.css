@@ -1,0 +1,6 @@
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-block: 10px;
+}

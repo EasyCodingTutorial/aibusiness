@@ -1,58 +1,97 @@
+/* General Styles */
 .Custom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
     margin-block: 40px;
 }
 
-.Custom .Row {
+.Custom .Content {
+    width: 50%;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.Custom .Content:first-child {
     gap: 10px;
 }
 
-.Custom .Row div {
-    width: 50%;
-    overflow: hidden;
-}
-
-.Custom .Row img {
-    height: 500px;
-    width: 100%;
+.Custom .Content:first-child img {
+    width: 350px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: var(--boxShadow);
 }
 
-.Custom .Row div h6 {
-    font-weight: 900;
+.Custom .Content div h6 {
+    font-weight: 800;
     font-size: 30px;
-    margin-bottom: 10px;
-    background: -webkit-linear-gradient(#eee, var(--main));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
-@media(max-width:1050px) {
+.Custom .Content div p {
+    font-size: 13px;
+    color: #ccc;
+    margin-block: 10px;
+}
 
-    .Custom .Row {
+.Custom .Content div li {
+    list-style: square;
+    margin-block: 3px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .Custom {
         flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 70px;
-        border-bottom: 0.2px dashed #ccc;
+        /* Stack content vertically on smaller screens */
+        align-items: center;
+        /* Center the content */
     }
 
-    .Custom .Row div {
+    .Custom .Content {
         width: 100%;
+        /* Full width for each content block */
+        justify-content: center;
+        display: block;
+        /* Center the items */
+    }
+
+    .Custom .Content:first-child img {
+        width: 100%;
+        height: 300px !important;
+        /* Maintain aspect ratio */
+    }
+
+    .Custom .Content div h6 {
+        font-size: 24px;
+        /* Adjust font size */
+    }
+
+    .Custom .Content div p {
+        font-size: 14px;
+        /* Slightly increase font size for readability */
+    }
+
+    .Custom .Content div li {
+        font-size: 14px;
+        /* Adjust font size for better readability */
     }
 }
 
-@media(max-width:500px) {
-    .Custom .Row div h6 {
-        font-weight: 900;
+@media (max-width: 480px) {
+    .Custom .Content div h6 {
         font-size: 20px;
+        /* Further reduce heading font size */
     }
 
-    .Custom .Row img {
-        height: 300px;
-        width: 100%;
+    .Custom .Content div p {
+        font-size: 14px;
+        /* Adjust font size for small screens */
+    }
+
+    .Custom .Content div li {
+        font-size: 12px;
+        /* Adjust list item font size */
     }
 }

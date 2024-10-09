@@ -5,31 +5,30 @@ import styles from './Custom.module.css'
 export const Custom = () => {
     return (
         <div className={styles.Custom}>
-            <div className={styles.Row}>
-                <div>
-                    <h6>Where Virtual Dreams Become Reality</h6>
-                    <p>
-                        Unleash the power of your imagination and explore limitless virtual worlds. Our cutting-edge VR technology turns your wildest fantasies into fully immersive experiences, blurring the lines between the virtual and real.
-                    </p>
-                </div>
-                <div>
-                    <img src="/assets/custom1.jpg" alt="" />
-                </div>
+
+            <div className={styles.Content}>
+                <img src="/assets/work1.jpg" alt="" />
+                <img src="/assets/work2.jpg" alt="" />
             </div>
 
-            <div className={styles.Row}>
-
+            <div className={styles.Content}>
                 <div>
-                    <img src="/assets/custom2.jpg" alt="" />
-                </div>
-
-                <div>
-                    <h6>Enter the Future, One Experience at a Time</h6>
+                    <h6>Our mission is to simplify your daily routine.</h6>
                     <p>
-                        Step into a world of endless possibilities with each new virtual adventure. Our platform offers a seamless, interactive journey through stunning environments, where every moment feels like a leap into the future.
+                        We are committed to providing solutions that save you time, reduce stress, and help you focus on what matters most. By leveraging innovative approaches and offering top-notch services, we aim to transform your everyday challenges into effortless tasks.
                     </p>
-                </div>
 
+                    <li>
+                        Time-saving Solutions
+                    </li>
+                    <li>
+                        Stress-free Experience
+                    </li>
+                    <li>
+                        Seamless Integration
+                    </li>
+
+                </div>
             </div>
 
         </div>

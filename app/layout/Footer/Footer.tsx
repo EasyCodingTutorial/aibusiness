@@ -3,60 +3,61 @@ import React from 'react'
 import styles from './Footer.module.css'
 
 import Link from 'next/link'
+
 const GetHelp = [
     {
         LinkText: "Contact Us",
-        LinkTo: "/", // Update as per your website structure
+        LinkTo: "",
     },
     {
         LinkText: "Support",
-        LinkTo: "/",
+        LinkTo: "",
     },
     {
         LinkText: "FAQs",
-        LinkTo: "/",
+        LinkTo: "",
     },
     {
-        LinkText: "VR Setup Guide",
-        LinkTo: "/",
+        LinkText: "AI Solutions Guide",
+        LinkTo: "",
     },
 ];
 
 const Info = [
     {
         LinkText: "About Us",
-        LinkTo: "/",
+        LinkTo: "",
     },
     {
-        LinkText: "Technology",
-        LinkTo: "/",
+        LinkText: "Our Technology",
+        LinkTo: "",
     },
     {
         LinkText: "Careers",
-        LinkTo: "/",
+        LinkTo: "",
     },
     {
         LinkText: "Partnerships",
-        LinkTo: "/",
+        LinkTo: "",
     },
 ];
 
 const CustomerServices = [
     {
         LinkText: "My Account",
-        LinkTo: "/",
+        LinkTo: "",
     },
     {
-        LinkText: "VR Experiences",
-        LinkTo: "/",
+        LinkText: "Consulting Services",
+        LinkTo: "",
     },
     {
-        LinkText: "Custom VR Solutions",
-        LinkTo: "/",
+        LinkText: "Custom AI Solutions",
+        LinkTo: "",
     },
     {
         LinkText: "Subscription Plans",
-        LinkTo: "/",
+        LinkTo: "",
     },
 ];
 

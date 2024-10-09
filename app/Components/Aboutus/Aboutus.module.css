@@ -1,0 +1,145 @@
+/* General Styles */
+.Aboutus {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-block: 10px;
+}
+
+.Aboutus .Content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.AboutContent {
+    align-items: center;
+}
+
+.AboutContent h6 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.AboutContent h5 {
+    font-size: 30px;
+    margin-block: 7px;
+    font-weight: 800;
+}
+
+.AboutContent p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+/* AboutBox */
+.AboutBoxContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.AboutBox {
+    width: calc(50% - 5px);
+    height: 150px;
+    padding: 10px;
+    box-shadow: var(--boxShadow);
+    margin-bottom: 2px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.AboutBox:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.AboutBox h6 {
+    font-size: 30px;
+}
+
+.AboutBox h5 {
+    font-size: 20px;
+    margin-block: 3px;
+}
+
+.AboutBox p {
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .Aboutus {
+        flex-direction: column;
+        /* Stack content vertically on small screens */
+        align-items: center;
+        /* Center the content */
+    }
+
+    .Aboutus .Content {
+        width: 100%;
+        /* Take full width */
+        justify-content: center;
+        /* Center align items */
+    }
+
+    .AboutBoxContent {
+        flex-direction: column;
+        /* Stack boxes vertically */
+    }
+
+    .AboutBox {
+        width: 100%;
+        /* Make AboutBox take full width */
+        height: auto;
+        /* Adjust height automatically */
+    }
+
+    .AboutContent h5 {
+        font-size: 24px;
+        /* Adjust font size on smaller screens */
+    }
+
+    .AboutContent h6 {
+        font-size: 18px;
+        /* Adjust font size on smaller screens */
+    }
+
+    .AboutBox h6 {
+        font-size: 24px;
+        /* Adjust font size on smaller screens */
+    }
+
+    .AboutBox h5 {
+        font-size: 18px;
+        /* Adjust font size on smaller screens */
+    }
+
+    .AboutBox p {
+        font-size: 14px;
+        /* Adjust font size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .AboutContent h5 {
+        font-size: 20px;
+        /* Further reduce font size on extra small screens */
+    }
+
+    .AboutBox h6 {
+        font-size: 20px;
+        /* Adjust font size */
+    }
+
+    .AboutBox h5 {
+        font-size: 16px;
+        /* Adjust font size */
+    }
+
+    .AboutBox p {
+        font-size: 12px;
+        /* Adjust font size */
+    }
+}

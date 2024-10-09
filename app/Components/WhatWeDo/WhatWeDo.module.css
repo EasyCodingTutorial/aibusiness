@@ -1,0 +1,58 @@
+.whatwedo {
+    margin-block: 40px;
+}
+
+.whatwedo .Row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatwedo .Row div {
+    width: 50%;
+    overflow: hidden;
+}
+
+.whatwedo .Row img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+}
+
+.whatwedo .Row div h6 {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(#eee, var(--main));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(max-width:1050px) {
+
+    .whatwedo .Row {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 70px;
+        border-bottom: 0.2px dashed #ccc;
+    }
+
+    .whatwedo .Row div {
+        width: 100%;
+    }
+}
+
+@media(max-width:500px) {
+    .whatwedo .Row div h6 {
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .whatwedo .Row img {
+        height: 300px;
+        width: 100%;
+    }
+}
