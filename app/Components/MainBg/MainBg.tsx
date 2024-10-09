@@ -40,7 +40,7 @@ export const MainBg = () => {
             </div>
             <div className={styles.Content}>
                 <h6>EasyConsult AI</h6>
-                <h5>Financial Planning for Your Company's Future.</h5>
+                <h5>Financial Planning for Your Company&apos;s Future.</h5>
             </div>
 
             {/* Slider Controls */}
